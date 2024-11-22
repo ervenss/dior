@@ -1,0 +1,65 @@
+
+.html{
+    box-sizing: border-box;
+}
+
+/* наследуют от родителя */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+/* убираем стиди ссылок по умолчанию */
+a{
+color: inherit;
+text-decoration: none;
+}
+/* убираю точки у списка */
+
+ul{
+    list-style-type:none ;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1b1b1b;
+}
+/* делаем элементы в строку */
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+/* фраза */
+.header__title{
+  font-family: "Playfair Display", serif;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: auto;
+}
+
+.menu{
+    margin-left: 130px;
+    margin-right: 185px; 
+}
+
+.menu__item{
+    font-size: 12px;
+    margin-bottom: 10px;
+text-transform: uppercase;
+}
+/* стили для сердечка и корзинки */
+.user-nav{
+display: flex;
+gap: 0 20px;
+}
