@@ -22,3 +22,14 @@ const swiperTop = new Swiper('.top__swiper', {
         prevEl: '.swiper-button-prev',
       },
   });
+
+
+  document.querySelectorAll('.accordion__trigger').forEach((item) => {
+    item.addEventListener('click', () => {
+      const accordionItem = item.closest('.accordion__item');
+      if (accordionItem) {
+        accordionItem.classList.toggle('accordion__item--active');
+      }
+    });
+  });
+  

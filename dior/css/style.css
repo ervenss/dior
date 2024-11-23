@@ -151,7 +151,7 @@ content: none;
 
 /* второй слайдер */
 .about{
-margin-bottom: 150px;
+margin-bottom: 100px;
 overflow: hidden;
 }
 
@@ -205,4 +205,71 @@ margin-top: -6px;
 .container-arrow .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled{
     opacity: 1;
+}
+
+.accordeon{
+margin-bottom: 223px;
+}
+
+.accordion__inner{
+    padding-left: 200px;
+}
+
+.accordion__item{
+    border-bottom: 1px solid #000;
+    padding: 0 101px 0 0;
+    position: relative;
+}
+
+.accordion__item::before{
+content: '';
+position: absolute;
+width: 16px;
+height: 51px;
+background-image: url(../images/niz-arrow.svg);
+right: 85px;
+top: 50px;
+}
+.accordion__item:last-child::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/accordeon.jpg);
+    width: 65px;
+    height: 120px;
+    bottom: -73px;
+    left: 268px;
+}
+
+.accordion__trigger{
+display: flex; /*в одну линию*/
+justify-content: space-between; /*в одну линию*/
+cursor: pointer;
+padding-top: 50px;
+}
+.accordion__trigger-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+    padding-bottom: 42px;
+
+}
+
+.accordion__trigger-text{
+    flex-basis: 387px;
+    margin-right: 104px;
+    padding-bottom: 20px;
+}
+
+
+.accordion__content{
+    padding-top: 20px;
+    display: none;
+    padding-bottom: 20px;
+}
+
+.accordion__content p{
+    margin-bottom: 10px;
+}
+.accordion__item.accordion__item--active .accordion__content {
+    display: block;
 }
